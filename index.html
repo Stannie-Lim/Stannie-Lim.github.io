@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>RGB to Hex</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/png/512/183/183869.png" />
     <link rel="stylesheet" href="rgbtohex.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="hextorgb">
-        <a href="hextorgb.html">Hex to RGB</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">RGB to Hex Converter</a>
+        <a class="navbar-brand ml-auto" href="hextorgb.html">Hex to RGB Converter</a>
+    </nav>
 
     <div class="rgbinput">
         <label for="red">R:</label><input type="number" min="0" max="255" id="r" onchange="changec(document.getElementById('r').value, document.getElementById('g').value, document.getElementById('b').value);" onkeyup="changec(document.getElementById('r').value, document.getElementById('g').value, document.getElementById('b').value);">
@@ -17,11 +20,9 @@
         <label for="red">B:</label><input type="number" min="0" max="255" id="b" onchange="changec(document.getElementById('r').value, document.getElementById('g').value, document.getElementById('b').value);" onkeyup="changec(document.getElementById('r').value, document.getElementById('g').value, document.getElementById('b').value);">
     </div>
 
-    <div class="hexoutput">
-        <p class="hexoutput" id="hexoutput">
-            
-        </p>
-    </div>
+    <p class="hexoutput" id="hexoutput">
+
+    </p>
 
 </body>
 <script src="rgbtohex.js"></script>

@@ -4,23 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Hex to RGB</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/png/512/183/183869.png" />
     <link rel="stylesheet" href="hextorgb.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="hextorgb">
-        <a href="index.html">RGB to Hex</a>
-    </div>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">RGB to Hex Converter</a>
+        <a class="navbar-brand ml-auto" href="hextorgb.html">Hex to RGB Converter</a>
+    </nav>
 
     <div class="hexinput">
         <label for="hex">Hex:</label><input type="text" id="hex" onchange="changec(document.getElementById('hex').value);" onkeyup="changec(document.getElementById('hex').value);">
     </div>
 
-    <div class="rgboutput">
-        <p class="rgboutput" id="rgboutput">
+    <p class="rgboutput" id="rgboutput">
 
-        </p>
-    </div>
+    </p>
 
 </body>
 <script src="hextorgb.js"></script>

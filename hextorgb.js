@@ -1,4 +1,4 @@
-var defaultcolor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+var defaultcolor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
 var body = document.querySelector("body");
 var p = document.getElementById("rgboutput");
 
